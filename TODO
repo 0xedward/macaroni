@@ -1,0 +1,27 @@
+TODO:
+    - Make extension compatible with other browsers
+
+    - Add ability to decode
+        - Give user a notification of decoding result?
+            - If we allow notification, we need a settings page to allow users to disable notifications
+        - copy decoded string to clipboard?
+        - show tooltip of decoded value after the user selects the text?
+
+    - HTML Entity encoding
+        - Consider using https://github.com/mathiasbynens/he
+            - Cons:
+                - Adds dependency and need for chrome extension to make network requests
+        - https://ourcodeworld.com/articles/read/188/encode-and-decode-html-entities-using-pure-javascript
+        - https://mothereff.in/html-entities
+
+    - JavaScript character escaping
+        - https://mothereff.in/js-escapes
+        - https://mathiasbynens.be/notes/javascript-escapes
+
+- Resources for testing:
+    - https://mothereff.in/
+    - https://kk.lol/
+
+- Bugs
+    - leading spaces are stripped before we get info.selectionText
+        - " !&quot;#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~" will become "!&quot;#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"

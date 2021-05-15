@@ -25,3 +25,4 @@ TODO:
 - Bugs
     - leading spaces are stripped before we get info.selectionText
         - " !&quot;#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~" will become "!&quot;#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+    - jsonEscape doesn't contain \n chars because whitespace seems to be stripped before we use info.selectionText

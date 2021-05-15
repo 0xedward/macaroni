@@ -1,0 +1,13 @@
+{
+  "name": "Macaroni",
+  "description": "Encoding and escaping at the speed of copypasta",
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "contextMenus"
+  ],
+  "manifest_version": 2
+}

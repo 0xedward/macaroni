@@ -1,0 +1,19 @@
+{
+  "name": "macaroni",
+  "version": "1.0.0",
+  "main": "src/background.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xedward/macaroni.git"
+  },
+  "author": "0xedward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xedward/macaroni/issues"
+  },
+  "homepage": "https://github.com/0xedward/macaroni#readme",
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

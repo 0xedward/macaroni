@@ -1,5 +1,8 @@
 # Macaroni
-**Encoding at the speed of copypasta**
+<p align=center>
+  <img alt="Macaroni Chrome Extension Icon" src="src/assets/icon.png"/ width="200px" height="200px"><br>
+  <b>Encoding at the speed of copypasta</b>
+</p>
 
 Macaroni is a Chrome extension to help you quickly copy text you select as one of the following encodings:
   - [base64](https://en.wikipedia.org/wiki/Base64)

@@ -18,3 +18,6 @@ Macaroni is a Chrome extension to help you quickly copy text you select as one o
 If you are curious or concerned about [the permissions requested by this extension](https://github.com/0xedward/macaroni/blob/main/src/manifest.json#L9-L11), the following is a brief explainer for each permission and where you can find it used in code:
 
 - `contextMenus` is used [to create a menu items for you to specify which encoding you want copied to your clipboard for the text you have selected](https://github.com/0xedward/macaroni/blob/main/src/background.js#L4-L26)
+
+## Credits
+The extension [icon](https://thenounproject.com/search/?q=macaroni&i=1723765) was found on The Noun Project and was created by mikicon

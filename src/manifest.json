@@ -9,5 +9,10 @@
   "permissions": [
     "contextMenus"
   ],
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
   "manifest_version": 2
 }

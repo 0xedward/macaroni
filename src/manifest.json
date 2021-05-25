@@ -1,5 +1,6 @@
 {
   "name": "Macaroni",
+  "author": "0xedward",
   "description": "Encoding and escaping at the speed of copypasta",
   "version": "1.0.0",
   "background": {

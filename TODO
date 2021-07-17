@@ -21,6 +21,7 @@ TODO:
 - Resources for testing:
     - https://mothereff.in/
     - https://kk.lol/
+    - https://github.com/hackvertor/hackvertor
 
 - Bugs
     - leading spaces are stripped before we get info.selectionText

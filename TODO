@@ -3,7 +3,8 @@ TODO:
         - Consider writing a polyfill for webextension
 
     - Add ability to decode
-        - Add decode context menu to devtools
+        - Add decode context menu to devtools?
+            - Might not be possible - https://stackoverflow.com/questions/33319798/how-to-add-a-context-menu-item-in-devtools-network-panel
         - Give user a notification of decoding result?
             - If we allow notification, we need a settings page to allow users to disable notifications
         - copy decoded string to clipboard?

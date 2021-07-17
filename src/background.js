@@ -49,8 +49,15 @@ chrome.runtime.onInstalled.addListener( function() {
             break;
         }
         if (resultString !== '') {
-          console.log(resultString);
           copyTextToClipboard(resultString);
+          chrome.notifications.create('', {
+            title: 'Macaroni',
+            message: `Your selected text has been ${info.menuItemId}d and copied to your clipboard`,
+            contextMessage: 'Pasta Delivery!',
+            iconUrl: '../assets/icon.png',
+            type: 'basic',
+            priority: 2,
+          });
         }
       });
     }

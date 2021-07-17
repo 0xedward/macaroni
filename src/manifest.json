@@ -8,7 +8,10 @@
     "persistent": false
   },
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "tabs",
+    "http://*/",
+    "https://*/"
   ],
   "icons": {
     "16": "assets/icon.png",

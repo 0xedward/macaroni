@@ -25,26 +25,34 @@ chrome.runtime.onInstalled.addListener( function() {
     'contexts': ['selection'],
   });
 
+
   chrome.contextMenus.onClicked.addListener(function(info) {
     if (typeof info != 'undefined') {
-      let resultString = '';
-      switch (info.menuItemId) {
-        case 'base64Encode':
-          resultString = base64Encode(info.selectionText);
-          break;
-        case 'urlEncode':
-          resultString = urlEncode(info.selectionText);
-          break;
-        case 'jsonEscape':
-          resultString = jsonEscape(info.selectionText);
-          break;
-        case 'htmlEntityEncode':
-          resultString = htmlEntityEncode(info.selectionText);
-          break;
-      }
-      if (resultString !== '') {
-        copyTextToClipboard(resultString);
-      }
+      // https://bugs.chromium.org/p/chromium/issues/detail?id=116429
+      chrome.tabs.executeScript( {
+        code: 'window.getSelection().toString();',
+      }, function(selection) {
+        const selectionText = selection[0];
+        let resultString = '';
+        switch (info.menuItemId) {
+          case 'base64Encode':
+            resultString = base64Encode(selectionText);
+            break;
+          case 'urlEncode':
+            resultString = urlEncode(selectionText);
+            break;
+          case 'jsonEscape':
+            resultString = jsonEscape(selectionText);
+            break;
+          case 'htmlEntityEncode':
+            resultString = htmlEntityEncode(selectionText);
+            break;
+        }
+        if (resultString !== '') {
+          console.log(resultString);
+          copyTextToClipboard(resultString);
+        }
+      });
     }
   });
 },

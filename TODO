@@ -2,6 +2,11 @@ TODO:
     - Make extension compatible with other browsers
         - Consider writing a polyfill for webextension
 
+    - Add contextMenu under browserAction to enable/disable notifications
+        - https://developer.chrome.com/docs/extensions/reference/contextMenus/#type-ContextType
+        - https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/browserAction/onClicked
+        - https://github1s.com/Cookie-AutoDelete/Cookie-AutoDelete/blob/HEAD/src/services/ContextMenuEvents.ts#L242-L251
+
     - Add ability to decode
         - Add decode context menu to devtools?
             - Might not be possible - https://stackoverflow.com/questions/33319798/how-to-add-a-context-menu-item-in-devtools-network-panel

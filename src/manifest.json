@@ -9,10 +9,8 @@
   },
   "permissions": [
     "contextMenus",
-    "http://*/",
-    "https://*/",
     "notifications",
-    "tabs"
+    "activeTab"
   ],
   "icons": {
     "16": "assets/icon.png",

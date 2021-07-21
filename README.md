@@ -4,6 +4,13 @@
   <b>Encoding at the speed of copypasta</b>
 </p>
 
+<p align=center>
+  <a href="https://chrome.google.com/webstore/detail/macaroni/okpaeidpoafcnohfekdhnfedcaaoajmg"><img alt="Macaroni Chrome Web Store link" src="https://storage.googleapis.com/chrome-gcs-uploader.appspot.com/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png"/></a>
+  <br>
+  <img alt="Extension version deployed to Chrome Web Store" src="https://img.shields.io/chrome-web-store/v/okpaeidpoafcnohfekdhnfedcaaoajmg?label=Chrome%20web%20store%20version%20"/>
+  <img alt="Number of Extension Users" src="https://img.shields.io/chrome-web-store/users/okpaeidpoafcnohfekdhnfedcaaoajmg?color=2379C83D"/>
+</p>
+
 Macaroni is a Chrome extension to help you quickly copy text you select as one of the following encodings:
   - [base64](https://en.wikipedia.org/wiki/Base64)
   - [URL encoding](https://en.wikipedia.org/wiki/Percent-encoding)

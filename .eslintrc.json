@@ -10,6 +10,11 @@
         "ecmaVersion": 12
     },
     "rules": {
+        "max-len": ["error", {
+            "comments": 110,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true
+        }],
         "require-jsdoc" : ["off"]
     }
 }

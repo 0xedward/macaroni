@@ -1,13 +1,22 @@
 {
   "name": "Macaroni",
+  "author": "0xedward",
   "description": "Encoding and escaping at the speed of copypasta",
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "manifest_version": 3,
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "notifications",
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
   ],
-  "manifest_version": 2
+  "icons": {
+    "16": "assets/icon-16.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  }
 }
